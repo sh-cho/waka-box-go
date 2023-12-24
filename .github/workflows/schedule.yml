@@ -10,6 +10,7 @@ on:
   schedule:
     # kst 6am
     - cron: "0 21 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
