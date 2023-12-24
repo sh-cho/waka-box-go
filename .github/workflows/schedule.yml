@@ -8,7 +8,8 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 0 * * *"
+    # kst 6am
+    - cron: "0 21 * * *"
 
 jobs:
   build:
@@ -17,7 +18,7 @@ jobs:
     env:
       WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      GIST_ID: 9bc7025496e478f439b9cd43eba989a4
+      GIST_ID: 58909d6332ce0ce537b3e2de2551c30d
       GIST_BARSTYLE: SOLIDLT
       GIST_BARLENGTH: -1
       GIST_TIMESTYLE: SHORT
